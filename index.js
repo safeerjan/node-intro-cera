@@ -5,9 +5,10 @@ var rect = require('./rectangle');
 //   area: (x, y) => (x * y)
 // };
 
+
 function solveRect(l, b) {
-  console.log("Solving for rectangle with l = "
-    + l + " and b = " + b);
+  console.log("Solving for rectangle with length = "
+    + l + " and breadth = " + b);
   rect(l, b, (err, rectangle) => {
     if (err) {
       console.log("ERROR: ", err.message);
@@ -19,6 +20,7 @@ function solveRect(l, b) {
         + l + " and b = " + b + " is " + rectangle.perimeter());
     }
   });
+
   console.log("This statement after the call to rect()");
 };
 
